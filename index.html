@@ -1,23 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Open Graph / WhatsApp -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Novin & Hui Ting — Wedding Invitation" />
-<meta property="og:description" content="You're invited to celebrate our wedding. Tap to RSVP." />
-<meta property="og:image" content="https://logenbeastly.github.io/wedding-invite/assets/preview.jpg" />
-<meta property="og:url" content="https://logenbeastly.github.io/wedding-invite/" />
-<meta property="og:site_name" content="Wedding Invitation" />
-
-<!-- Twitter (WhatsApp also respects this sometimes) -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Novin & Hui Ting — Wedding Invitation" />
-<meta name="twitter:description" content="You're invited to celebrate our wedding. Tap to RSVP." />
-<meta name="twitter:image" content="https://logenbeastly.github.io/wedding-invite/assets/preview.jpg" />
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wedding Invitation</title>
+
+  <title>Novin & Hui Ting — Wedding Invitation</title>
   <meta name="description" content="Wedding invitation and RSVP" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,8 +23,8 @@
         <div class="pill">You're invited!</div>
 
         <h1 class="title">
-          <span id="guestName">Dear Guest~</span>,
-          <span class="soft">We would love to celebrate our union with you</span>
+          <span id="guestName">Dear Guest</span>,
+          <span class="soft">we would love to celebrate our union with you</span>
         </h1>
 
         <!-- Floral banner -->
@@ -57,14 +44,17 @@
             <div class="k">Date</div>
             <div class="v">Saturday, 28 March 2026</div>
           </div>
+
           <div class="detail">
             <div class="k">Time</div>
-            <div class="v">8:45AM till 12:00PM</div>
-            </div>
+            <div class="v">8:45 AM – 12:00 PM</div>
+          </div>
+
           <div class="detail">
             <div class="k">Note</div>
-            <div class="v">Please be seated by 9:10AM as program will start by 9:15AM</div>
+            <div class="v">Kindly be seated by 9:10 AM as the program will begin at 9:15 AM</div>
           </div>
+
           <div class="detail">
             <div class="k">Venue</div>
             <div class="v">
@@ -78,11 +68,12 @@
           </div>
         </div>
 
+        <!-- Option B: keep separate notes -->
         <p class="note">
           Dress code: <b>Smart casual</b>. Please RSVP by <b>14 February 2026</b>.
         </p>
         <p class="note">
-          Color code: Any <b>pastel color</b> excluding <b>light pink and white</b>.
+          Preferred colors: <b>pastel shades</b>, excluding <b>light pink and white</b>.
         </p>
       </header>
 
@@ -90,7 +81,6 @@
         <h2 class="h2">RSVP</h2>
         <p class="sub">A quick tap helps us plan seating and food.</p>
 
-        <!-- PATCH: removed Netlify attributes and hidden netlify fields -->
         <form id="rsvpForm">
           <input type="hidden" name="guest_name" id="guestNameField" />
           <input type="hidden" name="response" id="responseField" />
@@ -103,7 +93,7 @@
 
           <!-- Pax chips -->
           <div class="paxRow" id="paxRow">
-            <div class="label">Number of pax</div>
+            <div class="label">Number of guests attending</div>
             <div class="paxChips" id="paxChips">
               <button type="button" class="chip" data-pax="1">1</button>
               <button type="button" class="chip" data-pax="2">2</button>
@@ -131,7 +121,7 @@
       </section>
 
       <footer class="footer">
-        <div class="tiny">Share link like <code>?name=Daniel%20Tan</code></div>
+        <div class="tiny">This invitation is personalized for you.</div>
       </footer>
 
     </section>
@@ -140,3 +130,4 @@
   <script src="./script.js"></script>
 </body>
 </html>
+
