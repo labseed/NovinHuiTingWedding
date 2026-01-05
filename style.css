@@ -133,7 +133,8 @@ body{
 }
 .banner-names{
   margin-top: 8px;
-  font-family: Fraunces, serif;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
   font-size: 30px;
   line-height: 1.05;
   letter-spacing: .01em;
