@@ -8,7 +8,8 @@
   /* ========= URL PARAM ========= */
   const params = new URLSearchParams(window.location.search);
   const guestName = (params.get("name") || "").trim();
-  const safeName = guestName || "Dear Guest";
+  const cleanedName = guestName.replace(/^dear\s+/i, "").trim();
+  const safeName = cleanedName ? `Dear ${cleanedName} & family` : "Dear Guest & family";
 
   /* ========= ELEMENTS ========= */
   const guestNameEl = $("guestName");
@@ -29,7 +30,7 @@
 
   /* ========= INIT ========= */
   if (guestNameEl) guestNameEl.textContent = safeName;
-  if (guestNameField) guestNameField.value = safeName;
+  if (guestNameField) guestNameField.value = guestName || "Guest";
 
   function clearPax() {
     paxField.value = "";
